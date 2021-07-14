@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JunoJenna</title>
+    <link rel="icon" href="./image/주노재연icon-01.png">
+</head>
+<body>
+    <div class="container">
+        <div class="frame" id="frame-1">
+            <img src="./image/주노재연-01.png" alt="logo" class="logo" />
+            <h1 class="weight500">우리가 사랑한지</h1>
+                <SCRIPT name="JavaScript">
+                    today = new Date()      
+                    xday = new Date("December 18, 2020") //괄호안의 날짜를 수정하세요..시험 보기 시작한 날짜^-^//
+                    xday.setYear = today.getYear;    
+                    daysAfter = (today.getTime() - xday.getTime()) / (1000*60*60*24);
+                    daysAfter = Math.round(daysAfter);
+                    document.write('<span style="font-family: S-Core; font-weight: 900; font-size: 100px;  z-index: 2;"><center>' + daysAfter + '일</center></span>')
+                </SCRIPT>
+            <div id="today"></div>
+            <img src="./image/hightlight.png" alt="highlight" class="highlight" />
+        </div>
+    </div>
+</body>
+</html>
